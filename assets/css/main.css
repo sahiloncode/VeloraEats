@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+@plugin "@iconify/tailwind4";
+
+@plugin "flyonui" {
+  themes: all;
+}
+
+@import 'flyonui/variants.css';
+@source "../../node_modules/flyonui/flyonui.js";
+
+@source "../../html/**/*.html";
+@source "../json/**/*.json";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto;
+}
+
+:root,
+[data-theme='light'] {
+  --color-base-100: #121212;
+  --color-base-200: #f6f1eb;
+  --color-base-300: #1e1a18;
+  --color-base-content: #f6f1eb;
+  --color-primary: #c6a75e;
+  --color-primary-content: #ffffff;
+  --color-secondary: #6b1f1f;
+  --color-secondary-content: #ffffff;
+}
+
+[data-theme='dark']
+  li:not(.menu-title, .menu-disabled)
+  > :not(ul, .menu-title, .collapse, .accordion-content, .btn).menu-active {
+  background-color: var(--color-primary);
+  color: var(--color-primary-content);
+}
+
+body {
+  color: #a8a29e;
+}
+
+.bg-base-100 {
+  --color-base-content: #f6f1eb;
+  color: #f6f1eb;
+}
+
+.bg-base-200 {
+  --color-base-content: #1e1a18;
+  color: #1e1a18;
+}
+
+.bg-base-200 .card {
+  --color-base-content: #f6f1eb;
+  color: #f6f1eb;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: #b8934f;
+  border-color: #b8934f;
+}
+
+/* tailwind intersect */
+@import 'tailwindcss-intersect';
+
+/* tailwind motion */
+@plugin "tailwindcss-motion";
+
+/* Flatpickr */
+@import 'flyonui/src/vendor/flatpickr.css';
