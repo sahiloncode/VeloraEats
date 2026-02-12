@@ -82,6 +82,74 @@
       #services .card-body p {
         color: #000000 !important;
       }
+
+      @media (max-width: 640px) {
+        .collapse-toggle {
+          color: #000000 !important;
+          border-color: rgba(0, 0, 0, 0.35) !important;
+        }
+
+        html,
+        body {
+          overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+          word-break: break-word;
+        }
+
+        #home > div {
+          padding-top: 7rem !important;
+          gap: 1.5rem !important;
+        }
+
+        #home h1 {
+          font-size: 2rem !important;
+          line-height: 1.2 !important;
+        }
+
+        #services .card-body,
+        #team .card-body,
+        #contact-us .card-body {
+          padding: 1rem !important;
+        }
+
+        #contact-us .card-body {
+          gap: 1rem !important;
+        }
+
+        #contact-us h2 {
+          font-size: 1.75rem !important;
+          line-height: 1.2 !important;
+        }
+
+        #contact-us form .flex {
+          gap: 0.75rem !important;
+        }
+
+        #contact-us .input,
+        #contact-us .textarea {
+          min-height: 2.85rem;
+        }
+
+        #faqs > div > div > span {
+          display: none !important;
+        }
+
+        #faq-carousel-1 .carousel-slide {
+          margin: 0.25rem !important;
+        }
+
+        footer nav {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0.75rem !important;
+        }
+      }
     </style>
 
     <!-- Page CSS -->
