@@ -1,12 +1,12 @@
 @import 'tailwindcss';
 @plugin "@iconify/tailwind4";
 
-@plugin "flyonui" {
+@plugin "velora" {
   themes: all;
 }
 
-@import 'flyonui/variants.css';
-@source "../../node_modules/flyonui/flyonui.js";
+@import 'velora/variants.css';
+@source "../../node_modules/velora/velora.js";
 
 @source "../../html/**/*.html";
 @source "../json/**/*.json";
@@ -66,4 +66,5 @@ body {
 @plugin "tailwindcss-motion";
 
 /* Flatpickr */
-@import 'flyonui/src/vendor/flatpickr.css';
+@import 'velora/src/vendor/flatpickr.css';
+

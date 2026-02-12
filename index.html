@@ -24,6 +24,65 @@
 
     <!-- build:css -->
     <link rel="stylesheet" href="../assets/dist/css/output.css" />
+    <style>
+      html[data-theme],
+      html[data-theme='light'],
+      html[data-theme='dark'] {
+        --color-base-100: #ffffff;
+        --color-base-200: #f7f7f7;
+        --color-base-300: #ececec;
+        --color-base-content: #000000;
+        --color-primary: #f14647;
+        --color-primary-content: #ffffff;
+        --color-secondary: #f7f7f7;
+        --color-secondary-content: #000000;
+      }
+
+      .text-primary {
+        color: #000000 !important;
+      }
+
+      .text-base-content,
+      .text-base-content\/80,
+      .text-base-content\/70,
+      .text-base-content\/60 {
+        color: #000000 !important;
+      }
+
+      #contact-us h1,
+      #contact-us h2,
+      #contact-us h3,
+      #contact-us p,
+      #contact-us label {
+        color: #000000 !important;
+      }
+
+      #contact-us .input,
+      #contact-us .textarea,
+      #contact-us .input input,
+      #contact-us .textarea textarea {
+        color: #000000 !important;
+      }
+
+      #contact-us .input,
+      #contact-us .textarea {
+        border-color: rgba(0, 0, 0, 0.2) !important;
+      }
+
+      #contact-us .input input::placeholder,
+      #contact-us .textarea textarea::placeholder {
+        color: #000000 !important;
+        opacity: 1 !important;
+      }
+
+      #services .card-title {
+        color: #000000 !important;
+      }
+
+      #services .card-body p {
+        color: #000000 !important;
+      }
+    </style>
 
     <!-- Page CSS -->
 
@@ -834,8 +893,8 @@
     <script src="../assets/dist/libs/tailwindcss-intersect/dist/observer.min.js"></script>
     <script src="../assets/dist/libs/flatpickr/dist/flatpickr.js"></script>
 
-    <!-- FlyonUI JS -->
-    <script src="../assets/dist/libs/flyonui/flyonui.js"></script>
+    <!-- Velora JS -->
+    <script src="../assets/dist/libs/velora/velora.js"></script>
 
     <!-- Theme Utils JS -->
     <script src="../assets/dist/js/theme-utils.js"></script>
@@ -849,3 +908,4 @@
     <button id="scrollToTopBtn" class="btn btn-circle btn-soft btn-secondary/20 bottom-15 end-15 motion-preset-slide-right motion-duration-800 motion-delay-100 fixed absolute z-[3] hidden" aria-label="Circle Soft Icon Button"><span class="icon-[tabler--chevron-up] size-5 shrink-0"></span></button>
   </body>
 </html>
+
